@@ -7,12 +7,12 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs14.x
+  timeout: 2
+  memorySize: 128
 
 functions:
   hello-short:
     handler: handler.hello
-    timeout: 3
-    memorySize: 128
     description: short function
   hello-long:
     handler: handler.hello
